@@ -3,7 +3,7 @@ A simple and interactive Rock Paper Scissors game built using HTML, CSS, and Jav
 
 ## 🎮 How to Play?
 -- Choose Rock, Paper, or Scissors by clicking on the respective button.
---The computer randomly selects one of the three choices.
+-- The computer randomly selects one of the three choices.
 -- The winner is determined based on the following rules:
       -- Rock beats Scissors (Rock wins 🏆)
       -- Scissors beats Paper (Scissors wins ✂️)
@@ -12,9 +12,10 @@ A simple and interactive Rock Paper Scissors game built using HTML, CSS, and Jav
 The result is displayed, along with the player's and computer's choices.
 
 🛠️ Built With
-- **HTML** – Structure of the game.
-- **CSS** – Styling and layout.
-- **JavaScript** – Game logic and interactivity.
+- **HTML** : Structure of the game.
+- **CSS** : Styling and layout.
+- **JavaScript** : Game logic and interactivity.
+
 
 - ⚙️ Installation Steps
 ### 1. Clone the Repository
@@ -31,6 +32,9 @@ Navigate to the folder where the repository is cloned.
 ```
 Open the index.html file in a web browser.
 ```
+
+🌟 You are all set!
+<hr>
 
 ### 📸 Screenshots
 ![img1](https://github.com/user-attachments/assets/5cce60a6-2bd2-4573-9765-e909c023e2b2)
