@@ -4,12 +4,12 @@ A simple and interactive Rock Paper Scissors game built using HTML, CSS, and Jav
 ## 🎮 How to Play?
 - Choose Rock, Paper, or Scissors by clicking on the respective button. <br>
 - The computer randomly selects one of the three choices. <br>
-   The winner is determined based on the following rules: <br>
+- The winner is determined based on the following rules: <br>
       - Rock beats Scissors (Rock wins 🏆) <br>
       - Scissors beats Paper (Scissors wins ✂️) <br>
       - Paper beats Rock (Paper wins 📄) <br>
       - Same choice results in a draw 🤝 <br>
-The result is displayed, along with the player's and computer's choices. 
+- The result is displayed, along with the player's and computer's choices. 
 
 ## 🛠️ Built With
 - **HTML** : Structure of the game.
