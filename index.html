@@ -1,0 +1,50 @@
+<!-- 
+ Rules : when we click a button
+    1. computer will randomly select a move
+    2. compare the moves to get the result
+    4. Update a score
+    3. display the result in popup
+    Math.random() - generates a random number bw (0 <= n < 1)
+    Logical operators - &&, ||
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p class="game-title">Rock Paper Scissors</p>
+    <button onclick="playGame('rock')" class="game-btn">
+        <img src="static/rock-emoji.png" class="game-emojis">     
+    </button>
+
+    <button onclick="playGame('paper');" class="game-btn">
+        <img src="static/paper-emoji.png" class="game-emojis">
+    </button>
+
+    <button onclick="playGame('scissors');" class="game-btn">
+        <img src="static/scissors-emoji.png" class="game-emojis">
+    </button>
+
+    <p class="game-result"></p>
+    <p class="game-moves"></p>
+    <p class="game-score"></p>
+
+    <button onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        updateScoreElement();"
+        class="reset-btn
+    ">
+        Reset Score
+    </button>
+
+    <script src="logic.js"></script>
+</body>
+</html>

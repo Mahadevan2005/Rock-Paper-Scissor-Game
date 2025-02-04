@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: Roboto, Arial;
+}
+
+.game-title {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.game-emojis {
+    height: 50px;
+}
+
+.game-btn {
+    border: solid;
+    background-color: transparent;
+    border-color: white;
+    padding: 40px;
+    border-radius: 100px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.game-btn:hover {
+    background-color:blanchedalmond;
+}
+
+.game-result {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.game-score {
+    margin-top: 50px;
+}
+
+.reset-btn {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+}
