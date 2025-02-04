@@ -2,7 +2,7 @@
 A simple and interactive Rock Paper Scissors game built using HTML, CSS, and JavaScript.
 
 ## 🎮 How to Play?
--- **Choose Rock, Paper, or Scissors by clicking on the respective button.**
+-- Choose Rock, Paper, or Scissors by clicking on the respective button. <br>
 -- The computer randomly selects one of the three choices.
 -- The winner is determined based on the following rules:
       -- Rock beats Scissors (Rock wins 🏆)
