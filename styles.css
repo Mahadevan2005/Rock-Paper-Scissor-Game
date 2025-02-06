@@ -46,3 +46,13 @@ body {
     border-radius: 20px;
     margin-top: 20px;
 }
+
+.auto-play-btn {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+}

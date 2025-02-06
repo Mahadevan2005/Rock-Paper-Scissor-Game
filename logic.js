@@ -6,76 +6,95 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 
 updateScoreElement();
 
+let isAutoPlaying = false;
+let intervalId; 
+
+function autoPlay() {
+    if(!isAutoPlaying)
+    {
+        intervalId = setInterval(function() {
+            const playerMove = pickComputerMove();
+            playGame(playerMove);
+        }, 1500);
+        isAutoPlaying = true;
+    }
+
+    else {
+        clearInterval(intervalId);
+        isAutoPlaying = false;
+    }
+}
+
 function playGame(playerMove) {
-const computerMove = pickComputerMove();
-let result = '';
-if(playerMove === 'scissors')
-{
-    if(computerMove === 'rock')
+    const computerMove = pickComputerMove();
+    let result = '';
+    if(playerMove === 'scissors')
     {
-        result = 'Lost';
+        if(computerMove === 'rock')
+        {
+            result = 'Lost';
+        }
+        else if(computerMove === 'paper')
+        {
+            result = 'Won!!'
+        }
+        else if(computerMove === 'scissors')
+        {
+            result = 'Tied';   
+        }
     }
-    else if(computerMove === 'paper')
-    {
-        result = 'Won!!'
-    }
-    else if(computerMove === 'scissors')
-    {
-        result = 'Tied';   
-    }
-}
 
-else if(playerMove === 'rock')
-{
-    if(computerMove === 'rock')
+    else if(playerMove === 'rock')
     {
-        result = 'Tied';
+        if(computerMove === 'rock')
+        {
+            result = 'Tied';
+        }
+        else if(computerMove === 'paper')
+        {
+            result = 'Lost';
+        }
+        else if(computerMove === 'scissors')
+        {
+            result = 'Won!!';
+        }
     }
-    else if(computerMove === 'paper')
-    {
-        result = 'Lost';
-    }
-    else if(computerMove === 'scissors')
-    {
-        result = 'Won!!';
-    }
-}
 
-else if(playerMove === 'paper')
-{
-    if(computerMove === 'rock')
+    else if(playerMove === 'paper')
     {
-        result = 'Won!!';
+        if(computerMove === 'rock')
+        {
+            result = 'Won!!';
+        }
+        else if(computerMove === 'paper')
+        {
+            result = 'Tied'
+        }
+        else if(computerMove === 'scissors')
+        {
+            result = 'Lost';
+        }
     }
-    else if(computerMove === 'paper')
+
+    if(result === 'Won!!')
     {
-        result = 'Tied'
+        score.wins += 1;
     }
-    else if(computerMove === 'scissors')
+    else if(result === 'Lost')
     {
-        result = 'Lost';
+        score.losses += 1;
     }
-}
+    else if(result === 'Tied')
+    {
+        score.ties += 1;
+    }
 
-if(result === 'Won!!')
-{
-    score.wins += 1;
-}
-else if(result === 'Lost')
-{
-    score.losses += 1;
-}
-else if(result === 'Tied')
-{
-    score.ties += 1;
-}
+    localStorage.setItem('score', JSON.stringify(score));
 
-localStorage.setItem('score', JSON.stringify(score));
-
-updateScoreElement();
-document.querySelector('.game-result').innerHTML = `Game ${result}`;
-document.querySelector('.game-moves').innerHTML = `You <img src="static/${playerMove}-emoji.png" class="game-emojis">
-                                                  <img src="static/${computerMove}-emoji.png" class="game-emojis"> Computer`
+    updateScoreElement();
+    document.querySelector('.game-result').innerHTML = `Game ${result}`;
+    document.querySelector('.game-moves').innerHTML = `You <img src="static/${playerMove}-emoji.png" class="game-emojis">
+                                                    <img src="static/${computerMove}-emoji.png" class="game-emojis"> Computer`
 }
 
 function updateScoreElement() {
@@ -85,22 +104,22 @@ function updateScoreElement() {
 
 
 function pickComputerMove() {
-let computerMove = '';
-const randNumber = Math.random();
-if(randNumber >= 0 && randNumber < 1/3)
-{
-    computerMove = 'rock';
-}
+    let computerMove = '';
+    const randNumber = Math.random();
+    if(randNumber >= 0 && randNumber < 1/3)
+    {
+        computerMove = 'rock';
+    }
 
-else if (randNumber >= 1/3 && randNumber < 2/3)
-{
-    computerMove = 'paper';
-}
+    else if (randNumber >= 1/3 && randNumber < 2/3)
+    {
+        computerMove = 'paper';
+    }
 
-else if (randNumber >= 2/3 && randNumber < 1)
-{
-    computerMove = 'scissors';
-} 
+    else if (randNumber >= 2/3 && randNumber < 1)
+    {
+        computerMove = 'scissors';
+    } 
 
-return computerMove;
+    return computerMove;
 }
