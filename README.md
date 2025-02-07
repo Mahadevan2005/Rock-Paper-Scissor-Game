@@ -37,7 +37,7 @@ Open the index.html file in a web browser.
 <hr>
 
 ## 📸 Screenshots
-![rps-img-1](https://github.com/user-attachments/assets/fb6ef354-3a81-4333-81bc-b9d4e3df08bd)
+![rps-img-1](https://github.com/user-attachments/assets/bd85946d-bc86-479e-aea7-1aa3bf9bb29f)
 ![rps-img-2](https://github.com/user-attachments/assets/74d3f23a-b16d-4a1d-b6eb-6b686976809d)
 ![rps-img-3](https://github.com/user-attachments/assets/97fc9a24-7c34-4751-a52e-f138a9f57412)
 
