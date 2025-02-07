@@ -1,5 +1,5 @@
 # Rock Paper Scissors Game
-A simple and interactive Rock Paper Scissors game built using HTML, CSS, and JavaScript.
+A simple and interactive Rock Paper Scissors game with an auto play feature built using HTML, CSS, and JavaScript.
 
 ## 🎮 How to Play?
 - Choose Rock, Paper, or Scissors by clicking on the respective button. <br>
@@ -37,9 +37,10 @@ Open the index.html file in a web browser.
 <hr>
 
 ## 📸 Screenshots
-![img1](https://github.com/user-attachments/assets/5cce60a6-2bd2-4573-9765-e909c023e2b2)
-![img2](https://github.com/user-attachments/assets/ffd6da3d-0907-4fbe-9a59-03b3403b7913)
-![img3](https://github.com/user-attachments/assets/bd4c5d5e-dab6-4048-8b82-c8b37dc8225f)
+![rps-img-1](https://github.com/user-attachments/assets/fb6ef354-3a81-4333-81bc-b9d4e3df08bd)
+![rps-img-2](https://github.com/user-attachments/assets/74d3f23a-b16d-4a1d-b6eb-6b686976809d)
+![rps-img-3](https://github.com/user-attachments/assets/97fc9a24-7c34-4751-a52e-f138a9f57412)
+
 
 <hr>
 <h3 align="center">
